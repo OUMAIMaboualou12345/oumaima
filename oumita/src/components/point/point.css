@@ -1,0 +1,241 @@
+
+/*.gg h2{
+    color: rgb(4, 4, 31);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: inherit;
+    font-style: italic;
+}
+.gg{
+
+}
+.core{
+    display: flex;
+    padding: 5% 10% ;
+    
+}
+.B {
+    
+    width: 33vh;
+    height: 30vh;
+    margin-left: 20vh;
+    
+    background-color: rgb(29, 31, 32);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vh;
+    display: flex;
+    font-style: italic;
+    font-weight: bolder;
+}
+.B p{
+
+   
+   padding-right: 5vh;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+    font-weight: 200;
+    color: hsl(240, 23%, 90%);
+}
+*/
+.sentre{
+    background-color: rgb(7, 49, 92) ;
+    height: 250px;
+    width: 100vw;
+
+    
+   
+
+}
+.sentre img{
+    height: 200px;
+   
+    object-fit: cover;
+    width: 200px;
+    align-self: flex-end;
+    margin-top: -20px;
+   padding: 30px;
+    min-width: 50px;
+    object-fit: fill;
+    align-items: flex-start;
+    margin-bottom: 27px;
+    margin:  0 60px;
+  
+   
+}
+
+
+@media (max-width:770px) {
+    .core {
+        display: block;
+    }
+
+    .care {
+        margin: 10px 0;
+    }
+    
+    .sentre {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100vw;
+    }
+    .services-content{
+        padding: 0;
+        margin: 0 0 20px 0 ;
+        height: 50vh;
+        display: grid;
+    }
+    
+ 
+       
+}
+  
+.our-services {
+          padding: 6rem 0
+}
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.icones{
+    font-size: 5rem;
+    color: rgb(9, 51, 105);
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-top: -20%;
+    border-radius:  0 50PX 50px 0;
+    color: blue;
+    
+}
+.left-services-content{
+    flex: 1 1 300px;
+    text-align: center;
+    
+
+}
+.left-services-content h1{
+     color: rgb(5, 23, 73);
+     text-align: center;
+     font-size: 25px;
+     font-style: italic;
+     
+     flex-wrap: wrap;
+     float: none;
+     margin-top: -5%;
+     margin-bottom: 10%;
+     font-family: Arial, Helvetica, sans-serif;
+     
+}
+
+
+.box-point{
+  width: 800px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: -1px 0 10px #000;
+  justify-content: center;
+  text-align: center;
+  margin-top: -7%;
+  
+}
+
+.wrapper{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-top: 5%;
+   
+  }
+  .wrapper .card{
+    background: rgb(62, 114, 148);
+    width: calc(33% - 20px);
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    
+  }
+  .wrapper .card .circle{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: default;
+  }
+  .card .circle .box-point,
+  .card .circle .box-point span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .card .circle .box-point{
+    height: 100%;
+    width: 100%;
+    background: rgb(235, 235, 240);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+  }
+  .card .circle:hover .box-point{
+    transform: translate(-50%, -50%) scale(0.91);
+  }
+  .card .circle .box-point span,
+  .wrapper .card .text{
+    background: -webkit-linear-gradient(left, #000000, #243386);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .circle .box-point span{
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+  }
+  .card .circle:hover .box-point span{
+    transform: translate(-45%, -45%) scale(1.09);
+  }
+  .card .text{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .g h1{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+     margin-top: -4%;
+     font-size: 30px;
+     color: rgb(1, 20, 20);
+  }
+  @media(max-width: 753px){
+    .wrapper{
+      max-width: 700px;
+    }
+    .wrapper .card{
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+    }
+  }
+  @media(max-width: 505px){
+    .wrapper{
+      max-width: 500px;
+    }
+    .wrapper .card{
+      width: 100%;
+    }
+  }
